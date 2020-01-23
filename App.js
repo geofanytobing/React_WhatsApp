@@ -175,11 +175,13 @@ export default class App extends React.Component {
               </Body>
             </ListItem>
           </List>
-          <View style={{ flex: 1 }}>
+            <View style={{ flex: 1 }}>
           <Fab
+            containerStyle={{ }}
             style={{ backgroundColor: '#51e302' }}
             position="bottomRight">
             <Icon name="camera" />
+           
             <Button disabled style={{ backgroundColor: 'grey' }}>
               <Icon name="create" />
             </Button>

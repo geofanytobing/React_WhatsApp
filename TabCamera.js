@@ -28,11 +28,12 @@ export default function App() {
           style={{
             flex: 1,
             backgroundColor: 'transparent',
-            flexDirection: 'row',
+            paddingTop:400,
+            marginRight:160
           }}>
           <TouchableOpacity
             style={{
-              flex: 0.1,
+              flex: 1,
               alignSelf: 'flex-end',
               alignItems: 'center',
             }}
@@ -43,7 +44,7 @@ export default function App() {
                   : Camera.Constants.Type.back
               );
             }}>
-            <Text style={{ fontSize: 18}}> <Icon style={{color:'white'}} name='camera'/> </Text>
+            <Icon style={{color:'white', fontSize:40}} name='reverse-camera'/>
           </TouchableOpacity>
         </View>
       </Camera>
