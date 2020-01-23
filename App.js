@@ -32,7 +32,7 @@ export default class App extends React.Component {
  
     return (
       <Container>
-        <Header style={{backgroundColor:"#075E54"}} androidStatusBarColor="#075E54">
+        <Header style={{backgroundColor:"#075E54"}} androidStatusBarColor="#03260d">
 
           <Body>
            <Title>WhatsApp</Title>
@@ -134,7 +134,7 @@ export default class App extends React.Component {
               <Left>
 
                 <Thumbnail source={{ uri: 'https://raw.githubusercontent.com/arm02/cpsapp/master/public/uploads/webcam_5c3f2dac37117.png' }}  />
-                <Badge success style={{width:22, height:22,position:"absolute", bottom:1, right:0}}><Icon name="add" style={{color:"white", fontSize:18}}/></Badge>
+                <Badge success style={{width:21, height:21,position:"absolute", bottom:0, right:0}}><Icon name="add" style={{color:"white", fontSize:17, marginRight: -1}}/></Badge>
               </Left>
 
               <Body>
