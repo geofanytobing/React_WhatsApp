@@ -130,7 +130,7 @@ export default class App extends React.Component {
 
           <Tab heading={ <TabHeading style={{backgroundColor:"#075E54"}}><Text style={{color:"white"}}>Status</Text></TabHeading>}>
           <List>
-            <ListItem avatar last>
+            <ListItem avatar noBorder>
               <Left>
 
                 <Thumbnail source={{ uri: 'https://raw.githubusercontent.com/arm02/cpsapp/master/public/uploads/webcam_5c3f2dac37117.png' }}  />
@@ -149,7 +149,7 @@ export default class App extends React.Component {
             </ListItem> 
             </List>
           <List>
-            <ListItem avatar>
+            <ListItem avatar noBorder>
               <Left>
                 <Thumbnail source={{ uri: 'http://smkn10jakarta.sch.id/wp-content/uploads/2015/05/Bu_Aminah.jpg' }} style={{borderRadius: 50, borderColor: '#075E54' , borderWidth:2}} />
               </Left>
@@ -165,7 +165,7 @@ export default class App extends React.Component {
             </ListItem> 
             </List>
           <List>
-            <ListItem avatar>
+            <ListItem avatar noBorder>
               <Left>
                 <Thumbnail source={{ uri: 'http://smkn10jakarta.sch.id/wp-content/uploads/2018/10/DSC_0223.jpg' }}  style={{borderRadius: 50, borderColor: 'grey' , borderWidth:2}}/>
               </Left>
