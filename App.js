@@ -2,7 +2,7 @@ import React, { useState, useEffect, Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { Camera } from 'expo-camera';
 import { AppLoading } from 'expo';
-import { Container, List, ListItem, View, Thumbnail, Header, Fab, Tab, Tabs, TabHeading, Icon, Text, Left, Body, Right, Button, Title, ScrollableTab } from 'native-base';
+import { Container, List, Badge, ListItem, View, Thumbnail, Header, Fab, Tab, Tabs, TabHeading, Icon, Text, Left, Body, Right, Button, Title, ScrollableTab } from 'native-base';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -49,7 +49,7 @@ export default class App extends React.Component {
  
 
         
-        <Tabs>
+        <Tabs tabContainerStyle={{elevation:0}}>
         <Tab heading={ <TabHeading style={{backgroundColor:"#075E54"}}><Icon name="camera" style={{color:'white'}}/></TabHeading>}>
 
           <TabCamera />
@@ -58,11 +58,11 @@ export default class App extends React.Component {
             <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }} />
+                <Thumbnail source={{ uri: 'http://smkn10jakarta.sch.id/wp-content/uploads/2018/10/DSC_0158-1.jpg' }} />
               </Left>
               <Body>
-                <Text>Kumar Pratik</Text>
-                <Text note>Doing what you like will always keep you happy . .</Text>
+                <Text>Eriati Anavia, S.Pd</Text>
+                <Text note>Tolong Mtk Di kumpulin ............... . .</Text>
               </Body>
               <Right>
                 <Text note>3:43 pm</Text>
@@ -70,50 +70,50 @@ export default class App extends React.Component {
             </ListItem>
                <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }} />
+                <Thumbnail source={{ uri: 'http://smkn10jakarta.sch.id/wp-content/uploads/2018/10/DSC_0217.jpg' }} />
               </Left>
               <Body>
-                <Text>Kumar Pratik</Text>
-                <Text note>Doing what you like will always keep you happy . .</Text>
+                <Text>Chandra Mafia, S.Pd</Text>
+                <Text note>Besok Ulangan Listening Harap Hadir . .</Text>
               </Body>
               <Right>
-                <Text note>3:43 pm</Text>
+                <Text note>10:43 am</Text>
               </Right>
             </ListItem>
                <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }} />
+                <Thumbnail source={{ uri: 'http://smkn10jakarta.sch.id/wp-content/uploads/2018/10/Pak-Sudewo-Pranowo.jpg' }} />
               </Left>
               <Body>
-                <Text>Kumar Pratik</Text>
-                <Text note>Doing what you like will always keep you happy . .</Text>
+                <Text>Sudewo Pranowo, M.Pd </Text>
+                <Text note>DHarap Tugas PKN besok di kumpulin !!!!!!</Text>
               </Body>
               <Right>
-                <Text note>3:43 pm</Text>
+                <Text note>08:43 pm</Text>
               </Right>
             </ListItem>
                <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }} />
+                <Thumbnail source={{ uri: 'http://smkn10jakarta.sch.id/wp-content/uploads/2018/10/RUSTAM.jpg' }} />
               </Left>
               <Body>
-                <Text>Kumar Pratik</Text>
-                <Text note>Doing what you like will always keep you happy . .</Text>
+                <Text>RUSTAM</Text>
+                <Text note>PROYEKTOR DI KEMBALIKAN JANGAN DI BAWA PULANG</Text>
               </Body>
               <Right>
-                <Text note>3:43 pm</Text>
+                <Text note>03:43 pm</Text>
               </Right>
             </ListItem>
                <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }} />
+                <Thumbnail source={{ uri: 'https://raw.githubusercontent.com/arm02/cpsapp/master/public/uploads/webcam_5c406c65d5f6d.png' }} />
               </Left>
               <Body>
-                <Text>Kumar Pratik</Text>
-                <Text note>Doing what you like will always keep you happy . .</Text>
+                <Text>BANG UNDER</Text>
+                <Text note>Lorem Ipsum dolor shit amte meta tmasdmac .cx.,c.a </Text>
               </Body>
               <Right>
-                <Text note>3:43 pm</Text>
+                <Text note>03:43 pm</Text>
               </Right>
             </ListItem>
           </List>
@@ -130,10 +130,13 @@ export default class App extends React.Component {
 
           <Tab heading={ <TabHeading style={{backgroundColor:"#075E54"}}><Text style={{color:"white"}}>Status</Text></TabHeading>}>
           <List>
-            <ListItem avatar>
+            <ListItem avatar last>
               <Left>
-                <Thumbnail source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }} />
+
+                <Thumbnail source={{ uri: 'https://raw.githubusercontent.com/arm02/cpsapp/master/public/uploads/webcam_5c3f2dac37117.png' }}  />
+                <Badge success style={{width:22, height:22,position:"absolute", bottom:1, right:0}}><Icon name="add" style={{color:"white", fontSize:18}}/></Badge>
               </Left>
+
               <Body>
                 <Text>Status Saya</Text>
                 <Text note>Klik untuk melakukan pembaruan status saya . .</Text>
@@ -148,11 +151,11 @@ export default class App extends React.Component {
           <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }} style={{borderRadius: 50, borderColor: '#075E54' , borderWidth:2}} />
+                <Thumbnail source={{ uri: 'http://smkn10jakarta.sch.id/wp-content/uploads/2015/05/Bu_Aminah.jpg' }} style={{borderRadius: 50, borderColor: '#075E54' , borderWidth:2}} />
               </Left>
               <Body>
-                <Text>Status Saya</Text>
-                <Text note>Klik untuk melakukan pembaruan status saya . .</Text>
+                <Text>Aminah</Text>
+                <Text note>Kemarin 12.55</Text>
               </Body>
             </ListItem>
           </List>
@@ -164,11 +167,11 @@ export default class App extends React.Component {
           <List>
             <ListItem avatar>
               <Left>
-                <Thumbnail source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }}  style={{borderRadius: 50, borderColor: 'grey' , borderWidth:2}}/>
+                <Thumbnail source={{ uri: 'http://smkn10jakarta.sch.id/wp-content/uploads/2018/10/DSC_0223.jpg' }}  style={{borderRadius: 50, borderColor: 'grey' , borderWidth:2}}/>
               </Left>
               <Body>
-                <Text>Status Saya</Text>
-                <Text note>Klik untuk melakukan pembaruan status saya . .</Text>
+                <Text>Ichsan</Text>
+                <Text note>Sekarang 09.00</Text>
               </Body>
             </ListItem>
           </List>
@@ -192,11 +195,11 @@ export default class App extends React.Component {
              <List>
             <ListItem thumbnail>
               <Left>
-                <Thumbnail square source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }} style={{borderRadius: 50}} />
+                <Thumbnail square source={{ uri: 'https://it-club.smkn10jakarta.sch.id/images/foto/2017022209440658acfaf665d10.jpg' }} style={{borderRadius: 50}} />
               </Left>
               <Body>
-                <Text>Sankhadeep</Text>
-                <Text note numberOfLines={1}>Sekarang 20.00pm</Text>
+                <Text>Arief Setya</Text>
+                <Text note numberOfLines={1}><Icon name='redo' style={{color:'green'}}/>&nbsp;&nbsp;Sekarang 20.00</Text>
               </Body>
               <Right>
                 <Button transparent>
@@ -208,11 +211,11 @@ export default class App extends React.Component {
            <List>
             <ListItem thumbnail>
               <Left>
-                <Thumbnail square source={{ uri: 'https://upload.wikimedia.org/wikipedia/id/thumb/6/65/Naruto-Opening01_222.jpg/280px-Naruto-Opening01_222.jpg' }} style={{borderRadius: 50}}/>
+                <Thumbnail square source={{ uri: 'http://smkn10jakarta.sch.id/wp-content/uploads/2018/10/MUH.-NURROHMAN.jpg' }} style={{borderRadius: 50}}/>
               </Left>
               <Body>
-                <Text>Sankhadeep</Text>
-                <Text note numberOfLines={1}>Kemarin 15.20pm</Text>
+                <Text>Aroh Claten</Text>
+                <Text note numberOfLines={1}><Icon note name='undo' style={{color:'red'}}/>&nbsp;&nbsp;&nbsp;Kemarin 15.20</Text>
               </Body>
               <Right>
                 <Button transparent>
@@ -221,13 +224,13 @@ export default class App extends React.Component {
               </Right>
             </ListItem>
           </List>
-           <View style={{ flex: 1 }}>
+                  <View style={{ flex: 1 }}>
           <Fab
             style={{ backgroundColor: '#51e302' }}
             position="bottomRight">
-            <Icon name="call"/>
+            <Icon name="call" />
           </Fab>
-        </View>
+              </View>
           </Tab>
         </Tabs>
 
